@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang='pt-br'>
+	<title>Projeto básico com Git e Github</title>
+	<meta charset='utf8'>
+	 <link href="assets/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+	<div class='container'>
+		<h2>Projeto básico com Git e Github</h2>
+		<a href="http://rogerdudler.github.com/git-guide/index.pt_BR.html">Tutorial Git e Github</a>	
+		<hr>
+		<h4>Resumidamente, os passos para o trabalho são:</h4><br />
+		<span class="badge badge-success">1</span> Criar repositório no <strong>github</strong> chamado 'gitProjetodeSistema2';<br />
+		<span class="badge badge-success">2</span> Adicionar todos ao projeto. Selecione o projeto que quer compartilhar(no caso 'gitProjetodeSistema2') e depois vá em <code>Settings</code>/<code>Collaborators</code> para adicionar os nomes das pessoas irão compartilhar o projeto.<br />
+		<span class="badge badge-important">3</span> Caso <strong>não tenha</strong> configurado o git, siga os passos abaixo:
+		<ul>
+			<li> Configurar senha e usuário para o git: <code>git config --global user.name seunome</code> e <code>git config --global user.email</code>;</li>
+			<li> Gerar e cadastrar uma chave ssh. Para gerar vá no <strong>git</strong> e digite no terminal <code>ssh-keygen -t rsa -C 'algo para identificar usuario'</code>. Após informar uma <em>passphrase</em>, copie conteúdo do arquivo gerado (normalmente em <code>.../.ssh/id_rsa.pub</code>). No <strong>github</strong>, vá em <code>Account Settings</code>/<code>SSH Keys</code>, clique no botão <code>Add SSH Key</code> e cole o conteúdo copiado do arquivo id_rsa.pub;</li>
+		</ul>
+		<span class="badge">4</span> <strong>No Windows Explorer</strong>, criar uma pasta chamada 'gitProjeto' no seu diretório home (no Windows c:\Users\seunome\) <br />
+		<span class="badge">5</span><strong> No git</strong>, acessar a pasta recém criada através do comando <code>cd gitProjeto</code>.<br />
+		<span class="badge">6</span> Iniciar um git neste diretório com <code>git init</code>;<br />
+		<span class="badge">8</span> Adicionar repositório (do nosso exemplo) ao git através do comando <code>git remote add origin https://github.com/PauloPortoPP/gitProjetodeSistema2.git</code><br />
+		
+		<span class="badge">10</span> Crie um clone do projeto na sua máquina(na pasta gitProjeto). No terminal <strong>do git</strong>, digite <code>git clone https://github.com/PauloPortoPP/gitProjetodeSistema2.git</code><br />
+		<span class="badge">11</span> Crie os arquivos definidos na pasta de acordo com as tarefas postadas no github na aba <code>Issues</code><br />
+		<span class="badge">12</span> No terminal, adicione <strong>todas</strong> as alterações (os arquivos novos/modificados) ao seu repositório local git com <code>git add .</code><br />
+		<span class="badge">13</span> Para confirmar estas mudanças, digitamos no terminal <code>git commit -m "comentários das alterações" </code>;<br />
+		<span class="badge">14</span> Ainda no terminal, enviando para o repositório remoto (<strong>github</strong>): <code>git push -u origin master</code>. Caso obtenha um erro será necessário executar o comando <code>git fetch origin</code> e logo após o comando <col>git push -u origin master</col>;	
+		<hr>
+		<strong>Legendas:</strong><br />
+		<span class="badge badge-success">-</span> - Tarefas já realizadas em aula;<br />
+		<span class="badge badge-important">-</span> - Tarefas opcionais;<br />
+		<span class="badge">-</span> - Tarefas a realizar;<br />
+		</div>
+</body>
+</html>
